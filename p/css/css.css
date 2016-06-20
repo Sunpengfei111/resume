@@ -1,0 +1,2609 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.head {
+    width: 1240px;
+    height: 77px;
+    margin: 0 auto;
+
+}
+
+.head .head-left1 {
+    float: left;
+    width: 220px;
+    height: 65px;
+    padding-top: 10px;
+    background: url("../img/logo.png") 0 -54px no-repeat;
+    /*width: 160px;
+    height: 50px;
+    float: left;
+    margin-top: 13px;
+    background: url("../img/logo.png") 0 -54px no-repeat;*/
+}
+
+.head .head-left1 .link-logo {
+    display: block;
+    width: 158px;
+    height: 54px;
+    background: url("../img/logo.png") no-repeat ;
+    float: left;
+}
+
+.head .head-left2 {
+    display: inline-block;
+    float: left;
+    width: 123px;
+    height: 52px;
+    margin-top: 12px;
+}
+
+.head .head-left2 .yueBa {
+    display: block;
+    width: 123px;
+    height: 52px;
+    background: url("../img/yueba.png") no-repeat center;
+    float: left;
+}
+
+.head .search-inner {
+    position: relative;
+    float: left;
+    width: 434px;
+    height: 44px;
+    border: 1px solid #cecece;
+    font-size: 14px;
+    margin-left: 38px;
+    margin-top: 18px;
+
+}
+
+.head .search-inner .search-logo {
+    display: block;
+    background: url("../img/sprite_search.png") 0 -206px no-repeat;
+    position: absolute;
+    left: 11px;
+    top: 17px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    overflow: hidden;
+}
+
+.head .search-inner input {
+    float: left;
+    width: 388px;
+    height: 43px;
+    padding-left: 34px;
+    padding-right: 10px;
+    border: 1px solid #cecece;
+    border-right: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.head .btn {
+    width: 85px;
+    height: 46px;
+    background: url("../img/sprite_search.png") 0 -108px no-repeat;
+    margin-top: 18px;
+    float: left;
+    cursor: pointer;
+    border: none;
+}
+
+.head .btn .btn-inner {
+    display: none;
+}
+
+.head .head-right {
+    float: right;
+    width: 229px;
+    height: 43px;
+    margin-top: 20px;
+}
+.head .head-right .log{
+    float: right;
+    position: relative;
+    width: 43px;
+    height: 43px;
+    padding: 0 0 0 18px;
+    z-index: 2;
+}
+.head .head-right .log:hover .unLogBox {
+    display: block;
+}
+.unLogBox {
+    display: none;
+    float: left;
+    position: absolute;
+    right: -25px;
+    bottom: -25px;
+    font-size: 12px;
+    border: 1px solid #333333;
+    z-index: 100;
+    padding: 2px 5px;
+    background: #FFF;
+    box-shadow: 3px 3px 3px 1px #999;
+    opacity: 0;
+    animation: arrowFlash 2s linear 0s both;
+    -webkit-animation: arrowFlash 2s linear 0s both;
+}
+
+@keyframes arrowFlash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fix{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888;
+    width: 100%;
+    background: #fff;
+}
+
+.head .head-right img {
+    display: block;
+    float: right;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.head .head-right .quick{
+    float: left;
+    position: relative;
+}
+
+.head .head-right .quick .quick-a{
+    display: block;
+    text-decoration: none;
+    height: 43px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+.head .head-right .quick:hover .quick-a span{
+    color: orange;
+}
+.head .head-right .quick .quick-a .quick-i1{
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background: url("../img/sprite_common.png") -90px 0 no-repeat;
+}
+.head .head-right .quick:nth-child(2) .quick-a .quick-i1{
+     background: url("../img/sprite_common.png") 0 0 no-repeat;
+ }
+.head .head-right .quick:nth-child(3) .quick-a .quick-i1{
+    background: url("../img/sprite_common.png") -30px 0 no-repeat;
+}
+.head .head-right .quick .quick-a span{
+    display: block;
+    text-align: center;
+    margin-top: 2px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.head .head-right .quick .quick-a .quick-i2{
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 1px;
+    height: 26px;
+    overflow: hidden;
+    background: -webkit-linear-gradient(top, rgba(252, 252, 252, 1) 0, rgba(232, 232, 232, 1) 50%, rgba(252, 252, 252, 1) 100%);
+}
+
+.head-bottom {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    background: -webkit-linear-gradient(left, rgba(15, 166, 234, 1) 0, rgba(89, 204, 24, 1) 10%, rgba(15, 166, 234, 1) 60%, rgba(15, 166, 234, 1) 100%);;
+
+}
+
+
+.banner {
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+}
+.banner .banner-navigation .navigation-list .list .hideBox{
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    background: red;
+
+}
+
+.banner-navigation {
+    width: 1240px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.banner-navigation .navigation-list {
+    height: 16px;
+    padding: 15px 0;
+    float: left;
+}
+
+.banner-navigation .navigation-list .list {
+    float: left;
+    padding: 0 6px;
+    text-shadow: 0 0 0 #fff;
+    position: relative;
+}
+.banner-navigation .navigation-list .list
+
+
+.banner-navigation .navigation-list .list .link-nav {
+    position: relative;
+    text-decoration: none;
+}
+.banner-navigation .navigation-list .list .link-nav .nav_sign{
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 254px;
+    height: 6px;
+    margin-left: -127px;
+    overflow: hidden;
+    background: url("../img/navigation_sign.png") 0 0 no-repeat;
+    z-index: 9999;
+}
+.banner-navigation .navigation-list .list .link-nav .link-inner{
+    color: #666;
+    font: 14px/1.5 hiragino sans gb,microsoft yahei,simsun;
+}
+.banner-navigation .navigation-list .list .link-nav .link-inner:hover{
+    color: orange;
+}
+
+
+.banner-navigation .cutRule {
+    float: left;
+    opacity: .2;
+    margin-top: 14px;
+}
+
+.banner-navigation .navigation-list .list .link-nav .vip {
+    background: url("../img/sprite_common.png") 0 -166px no-repeat;
+    display: inline-block;
+    width: 17px;
+    height: 7px;
+    overflow: hidden;
+    position: absolute;
+    top: -8px;
+    right: -10px;
+}
+
+.banner .banner-navigation .a {
+    float: right;
+}
+
+.banner-navigation .navigation-list .list .link-nav .vip1 {
+    display: inline-block;
+    background: url("../img/sprite_common.png") -190px -140px no-repeat;
+    height: 21px;
+    width: 21px;
+    overflow: hidden;
+    position: absolute;
+    top: -2px;
+    right: -4px;
+}
+
+.banner-navigation .navigation-list .list .link-nav .down {
+    display: inline-block;
+    background: url("../img/sprite_common.png") -100px -140px no-repeat;
+    height: 21px;
+    width: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: -2px;
+    right: -8px;
+}
+
+.banner-navigation .navigation-list .list .link-nav .a {
+    padding: 0 10px;
+    float: right;
+}
+
+.banner-banner {
+    margin-top: 123px;
+    position: relative;
+    width: 100%;
+    height: 470px;
+    float: left;
+}
+
+/*轮播图*/
+.banner-banner .banner-main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*background:blueviolet;*/
+    /*overflow:hidden;*/
+}
+
+.banner-banner .banner-main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-banner .banner-roller {
+    position: absolute;
+    top: 380px;
+    left: 170px;
+    width: 1012px;
+    height: 66px;
+    background: rgba(0, 0, 0, .56);
+    z-index: 3;
+    overflow: hidden;
+}
+
+.banner-banner .banner-roller .title {
+    float: left;
+    margin: 8px 0 0 5px;
+    width: 255px;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*word-wrap: break-word;*/
+    font-size: 22px;
+    color: #FFFFEE;
+    /*background:red;*/
+}
+
+.banner-banner .banner-roller .roller {
+    float: left;
+    position: relative;
+    margin: 7px 0 0 62px;
+    width: 637px;
+    height: 50px;
+    /*background:blue;*/
+    overflow: hidden;
+}
+
+#box {
+    width: 1288px;
+    overflow: hidden;
+}
+
+#box .mask {
+    position: relative;
+    float: left;
+    margin-right: 7px;
+    width: 85px;
+    height: 50px;
+}
+
+#box .mask i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85px;
+    height: 50px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    background: #000;
+    cursor: pointer;
+}
+
+#box img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+#box img.selected {
+    border: 3px solid #ff7800;
+}
+
+.banner-banner .banner-roller a:hover {
+    opacity: .4;
+    filter: alpha(opacity:40);
+}
+
+.banner-banner .banner-roller .btn-left {
+    position: absolute;
+    top: 7px;
+    left: 278px;
+    width: 34px;
+    height: 50px;
+    background: #373737;
+    color: #2a2a2a;
+}
+
+.banner-banner .banner-roller .btn-left .left {
+    display: block;
+    position: absolute;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    border: 5px solid #000;
+    transform: rotate(45deg);
+    left: 10px;
+    border-top: none;
+    border-right: none;
+}
+
+.banner-banner .banner-roller .btn-left .prev {
+    display: none;
+}
+
+.banner-banner .banner-roller .btn-right {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    width: 34px;
+    height: 50px;
+    background: #373737;
+    color: #2a2a2a;
+}
+
+.banner-banner .banner-roller .btn-right .right {
+    display: block;
+    position: absolute;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    border: 5px solid #000;
+    transform: rotate(45deg);
+    left: 2px;
+    border-bottom: none;
+    border-left: none;
+}
+
+.banner-banner .banner-roller .btn-right .next {
+    display: none;
+}
+
+.hot {
+    width: 1240px;
+    height: 587px;
+    /*background: greenyellow;*/
+    float: left;
+    margin-top: 45px;
+    margin-left: 57px;
+}
+
+.hot .title {
+    width: 955px;
+    height: 39px;
+}
+
+.hot .title a {
+    text-decoration: none;
+}
+
+.hot .title .today {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    float: left;
+    padding-bottom: 3px;
+}
+
+.hot .title .tui {
+    width: 750px;
+    height: 16px;
+    float: left;
+    padding: 0 5px;
+    margin-left: 6px;
+    margin-top: 15px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFFFEE;
+}
+
+.hot .title .tui a {
+    float: left;
+    margin-left: 2px;
+    font-size: 14px;
+    color: #424242;
+}
+
+.hot .title .tui a:hover {
+    color: orange;
+}
+
+.hot .title .tui p {
+    float: left;
+    background: orange;
+    padding: 1px 3px;
+    border-radius: 2px;
+}
+
+.hot .container-big {
+    width: 370px;
+    height: 320px;
+    float: left;
+    position: relative;
+}
+
+.hot .container-big .sign-right {
+    position: absolute;
+    bottom: 0;
+    left: 58px;
+    color: #fff;
+}
+
+.hot .container-big .sign-right p:first-child {
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+.hot .container-big .sign-right p:last-child {
+    font-size: 12px;
+    padding: 4px 0 6px 0;
+}
+
+.hot .container-big img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.hot .container-big a {
+    text-decoration: none;
+}
+
+.hot .container-big .sign {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 126, 0, .9);
+}
+
+.hot .container-big .sign .big {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -12px 0 0 -6px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-width: 12px;
+    border-left-color: #fff;
+    border-left-width: 16px;
+}
+
+.hot .container-big i {
+    border: 5px dashed transparent;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.hot .middle {
+    width: 585px;
+    height: 320px;
+    float: left;
+}
+
+.hot .middle .middle-top {
+    width: 585px;
+    height: 160px;
+    float: left;
+    margin-left: 5px;
+}
+
+.hot .middle .middle-top .topInner {
+    width: 185px;
+    height: 160px;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+}
+
+.hot .middle .middle-top .topInner:hover {
+    background: #f0f0f0;
+}
+
+.hot .middle .middle-top .topInner .imgBox {
+    width: 175px;
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+}
+
+.hot .middle .middle-top .topInner .imgBox .mask {
+    width: 175px;
+    height: 20px;
+    float: left;
+    position: absolute;
+    left: 5px;
+    top: 85px;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    background: #000;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.hot .middle .middle-top .topInner .imgBox > p {
+    z-index: 10;
+    display: block;
+    float: left;
+    width: 175px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    bottom: 54px;
+    font: 12px/1.5 hiragino sans gb, microsoft yahei, simsun;
+    color: #FFFFEE;
+}
+
+.hot .middle .middle-top .topInner .imgBox > img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.hot .middle .middle-top .topInner .explain a {
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-weight: normal;
+    color: #424242;
+}
+
+.hot .middle .middle-top .topInner .explain a:hover {
+    color: orange;
+}
+
+.hot .middle .middle-top .topInner i {
+    background: url("../img/sprite_common.png") -150px 0 no-repeat;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+}
+
+.hot .middle .middle-top .topInner span {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    font-size: 12px;
+
+}
+
+.hot .hot-left {
+    float: left;
+    margin-left: 20px;
+    margin-top: -39px;
+    width: 265px;
+    height: 409px;
+}
+
+.hot .hot-left .top {
+    width: 265px;
+    height: 39px;
+    overflow: hidden;
+    float: left;
+}
+
+.hot .hot-left .top > p {
+    display: inline-block;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    width: 265px;
+    height: 39px;
+    line-height: 39px;
+    margin-top: 6px;
+}
+
+.hot .hot-left .middle {
+    background: #f0f0f0;
+    width: 265px;
+    height: 227px;
+    float: left;
+    margin-top: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hot .hot-left .middle img {
+    float: left;
+}
+
+.hot .hot-left .middle p {
+    margin-top: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: #424242;
+    width: 240px;
+    display: inline-block;
+    margin-left: 11px;
+}
+
+.hot .hot-left .middle p:hover {
+    color: orange;
+}
+
+.hot .hot-left .bottom {
+    background: #f0f0f0;
+    float: left;
+    width: 235px;
+    height: 110px;
+    padding: 15px;
+}
+
+.hot .hot-left .bottom ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.hot .hot-left .bottom ul li {
+    position: relative;
+    height: 45px;
+    padding: 10px;
+}
+
+.hot .hot-left .bottom ul li > div:nth-child(1) {
+    position: absolute;
+    left: -13px;
+    top: -13px;
+    width: 85px;
+    height: 50px;
+    background: url("../img/hot-left-bottom1.jpg") no-repeat center;
+    background-size: cover; /*覆盖*/
+}
+
+.hot .hot-left .bottom ul li > div:nth-child(1) img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.hot .hot-left .bottom ul li > div:last-child {
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 60px;
+    _background: lightblue;
+    margin-left: 70px;
+}
+
+.hot .hot-left .bottom ul li > div:last-child h2 {
+    line-height: 20px;
+    font-size: 14px;
+    position: absolute;
+    left: 85px;
+    top: -14px;
+    /*标题省略号*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #424242;
+}
+
+.hot .hot-left .bottom ul li > div:last-child p {
+    font-size: 12px;
+    color: #999;
+}
+
+.hot .tXun {
+    width: 760px;
+    height: 18px;
+    margin-top: -15px;
+    background: lightgreen;
+    float: left;
+}
+
+.hot .tXun > a {
+    width: 48px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    background: orange;
+    color: #FFFFEE;
+    padding: 0 8px;
+    display: inline-block;
+    float: left;
+    margin: 1px 349px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.hot .tXun > a:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    z-index: 1;
+    background: -webkit-linear-gradient(left, rgba(186, 186, 186, 0) 0, rgba(186, 186, 186, 1) 20%, rgba(186, 186, 186, 1) 80%, rgba(186, 186, 186, 0) 100%);
+}
+
+.hot .ad {
+    width: 175px;
+    height: 18px;
+    margin-top: -15px;
+    float: left;
+    background: lightgreen;
+    margin-left: 20px;
+}
+
+.hot .ad > a {
+    width: 24px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    background: orange;
+    color: #FFFFEE;
+    padding: 0 8px;
+    display: inline-block;
+    float: left;
+    margin-left: 67px;
+    margin-top: 1px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.hot .hot-bottom {
+    width: 780px;
+    height: 160px;
+    margin-top: 10px;
+    float: left;
+    margin-left: -5px;
+}
+
+.hot .hot-bottom .hot-bottom1 {
+    width: 788px;
+    margin-left: -11px;
+}
+
+.hot .hot-bottom .hot-bottom1 .bottom-inner {
+    margin-left: 9px;
+    padding: 0 1px;
+}
+
+.hot .hot-bottom .hot-bottom1 .bottom-inner .imgBox .maskB {
+    margin-left: 1px;
+}
+
+.hot .adInner {
+    width: 185px;
+    height: 160px;
+    float: left;
+    margin-top: 10px;
+}
+
+.hot .adInner:hover {
+    background: #f0f0f0;
+}
+
+.hot .adInner .adInner-img {
+    margin: 5px auto;
+    width: 175px;
+    height: 100px;
+    position: relative;
+}
+
+.hot .adInner .adInner-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hot .adInner .king > a {
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-weight: normal;
+    color: #424242;
+}
+
+.hot .adInner .king > a:hover {
+    color: orange;
+}
+
+.hot .adInner .adInner-img > i {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 175px;
+    height: 70px;
+    background: url("../img/sprite_common.png") 0 -180px no-repeat;
+    cursor: pointer;
+}
+
+.mod {
+    width: 100%;
+    height: 215px;
+    float: left;
+    margin-top: 34px;
+}
+
+.mod .mod-title {
+    width: 1240px;
+    height: 215px;
+    margin-left: 57px;
+    float: left;
+}
+
+.mod .mod-title .selected {
+    width: 955px;
+    height: 32px;
+}
+
+.mod .mod-title .selected > a {
+    font-weight: bold;
+    line-height: 32px;
+    float: left;
+    display: inline-block;
+    font-size: 30px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.mod .mod-title .mod-inner {
+    width: 955px;
+    margin-bottom: 20px;
+    letter-spacing: -5px;
+    display: block;
+
+}
+
+.mod .mod-title .mod-inner .inner-list {
+    float: left;
+    margin: -5px -10px 0;
+    list-style: none;
+    display: block;
+    font: 12px/1.5 hiragino sans gb, microsoft yahei, simsun;
+}
+
+.mod .mod-title .mod-inner .inner-list .lists {
+    float: left;
+    width: 175px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+
+    font-size: 12px;
+    letter-spacing: normal;
+}
+
+.mod .mod-title .mod-inner .inner-list .lists:hover {
+    background: #f0f0f0;
+}
+
+.mod .mod-title .mod-inner .inner-list .lists .big-img {
+    display: block;
+    position: relative;
+    width: 100%;
+    font-weight: 500;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mod .mod-title .mod-inner .inner-list .lists .big-img img {
+    width: 175px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.mod .mod-title .mod-inner .inner-list .lists .figure-avatar {
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 32px;
+    margin-bottom: -5px;
+    zoom: 1;
+    z-index: 3;
+}
+
+.mod .mod-title .mod-inner .inner-list .lists .figure-avatar a:last-child {
+    color: #424242;
+}
+
+.mod .mod-title .mod-inner .inner-list .lists .figure-avatar .little-img {
+    display: block;
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #fff;
+}
+
+.mod .mod-title .mod-inner .inner-list .lists .figure-avatar .little-img img {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: bottom
+}
+
+.mod .mod-title .mod-inner .inner-list .lists .title {
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: normal;
+    color: #666;
+    display: block;
+    margin-top: 10px;
+}
+
+.mod .mod-title .mod-inner .inner-list .lists .title:hover {
+    color: orange;
+}
+
+.mod .mod-title .mod-inner .inner-list .lists .num {
+    position: relative;
+}
+
+.mod .mod-title .mod-inner .inner-list .lists .ico {
+    background: url("../img/sprite_common.png") -150px 0 no-repeat;
+    display: inline-block;
+    zoom: 1;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.mod .mod-title .mod-inner .inner-list .lists .num span {
+    display: inline-block;
+    zoom: 1;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: top;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.mod .mod-right {
+
+    float: right;
+    margin-top: -52px;
+
+}
+
+.mod .mod-right .mod-right-top > span {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.mod .mod-right .mod-right-bottom {
+    float: left;
+    margin-top: 10px;
+    width: 266px;
+}
+
+.mod .mod-right .mod-right-bottom ul li {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.mod .mod-right .mod-right-bottom img {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    float: left;
+
+}
+
+.mod .mod-right .mod-right-bottom .back {
+    background: #f0f0f0;
+    height: 65px;
+}
+
+.mod .mod-right .mod-right-bottom .back .big {
+    padding: 10px;
+    font-weight: bold;
+    color: #424242;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 6px;
+    vertical-align: top;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+}
+
+.mod .mod-right .mod-right-bottom .back .big:hover {
+    color: orange;
+}
+
+.mod .mod-right .mod-right-bottom .back .v + {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    vertical-align: top;
+    float: left;
+    margin-top: -2px;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url("../img/sprite_common.png") -110px -110px no-repeat;
+}
+
+.mod .mod-right .mod-right-bottom .back .little {
+    font-weight: 500;
+    color: #2a2a2a;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 6px;
+    vertical-align: top;
+    display: inline-block;
+    float: left;
+    padding: 0 10px;
+}
+
+.wrapper {
+    height: 359px;
+    /*overflow: hidden;*/
+}
+
+.wrapper .wrapper-title .wrapper-tui .cutRule {
+    float: left;
+    opacity: .5;
+    padding: 0 5px;
+    display: inline-block;
+    color: #424242;
+}
+
+.wrapper .wrapper-title .wrapper-tui .wrapper-arrow {
+    float: left;
+    width: 0;
+    height: 0;
+    margin: 5px 0 2px 4px;
+    border: 3px solid transparent;
+    border-left-color: #3c3c3c;
+}
+
+.wrapper .wrapper-big {
+    position: relative;
+}
+
+.wrapper .wrapper-big .broad {
+    display: inline-block;
+    float: left;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 2px 0 3px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #FF8406;
+}
+
+.wrapper .wrapper-big .wrapper-right .update {
+    position: absolute;
+    left: 215px;
+    bottom: 24px;
+    float: left;
+    width: 100px;
+    height: 20px;
+    font-size: 12px;
+}
+
+.wrapper .wrapper-big .cover {
+    width: 320px;
+    height: 50px;
+    opacity: .2;
+    filter: alpha(opacity=20);
+    float: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #000;
+}
+
+.wrapper .wrapper-middle .wrapper-top .wrapperInner {
+    position: relative;
+}
+
+.wrapper .wrapper-middle .wrapper-top .wrapperInner span {
+    position: absolute;
+    left: 5px;
+    color: #999999;
+}
+
+.wrapper .wrapper-middle .wrapper-top .wrapperInner .broad {
+    display: inline-block;
+    float: left;
+    width: 26px;
+    height: 14px;
+    position: absolute;
+    top: 5px;
+    margin-left: 144px;
+    padding: 0 2px 0 3px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #FF8406;
+}
+
+.wrapper .wrapper-middle .wrapper-top .wrapperInner .free {
+    background: url("../img/sprite_mark.png") -300px -120px no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    width: 55px;
+    height: 55px;
+}
+
+.wrapper .wrapper-left {
+    margin-top: -35px;
+    height: 355px;
+}
+
+.wrapper .wrapper-left .wrapper-top {
+    margin-top: -10px;
+}
+
+.wrapper .wrapper-left .wrapper-top p {
+    display: inline-block;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    width: 98px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 12px
+}
+
+.wrapper .wrapper-left .wrapper-top i {
+    background: url("../img/sprite_common.png") 0 -140px no-repeat;
+    width: 26px;
+    height: 7px;
+    display: inline-block;
+    float: left;
+    margin-left: 6px;
+    margin-top: 26px;
+}
+
+.wrapper .wrapper-left .wrapper-top img {
+    width: 130px;
+    height: 30px;
+    display: block;
+    float: right;
+    margin-top: 4px;
+}
+
+.wrapper .wrapper-left .wrapper-middle {
+    background: #f0f0f0;
+    height: 210px;
+    position: relative;
+}
+
+.wrapper .wrapper-left .wrapper-middle .list ol {
+    float: left;
+    width: 50%;
+    padding: 12px 0 0;
+    zoom: 1;
+    list-style: none;
+    display: block;
+    font: 12px/1.5 hiragino sans gb, microsoft yahei, simsun;
+}
+
+.wrapper .wrapper-left .wrapper-middle .list ol li {
+    float: none;
+    width: 100%;
+    position: relative;
+    margin-top: -10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: top;
+    padding: 6px;
+}
+
+.wrapper .wrapper-left .wrapper-middle .list ol li .long {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    zoom: 1;
+    width: 100px;
+}
+
+.wrapper .wrapper-left .wrapper-middle .list ol li span {
+    display: block;
+    float: left;
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+.wrapper .wrapper-left .wrapper-middle > a p {
+    position: absolute;
+    top: 68px;
+    left: 30px;
+    color: #FFFFEE;
+    z-index: 100;
+}
+
+.wrapper .wrapper-left .wrapper-middle > a .cover {
+    width: 225px;
+    height: 36px;
+    opacity: .4;
+    filter: alpha(opacity=40);
+    float: left;
+    position: absolute;
+    bottom: 110px;
+    right: 0;
+    background: #000000;
+}
+
+.wrapper .wrapper-left .wrapper-middle > a i {
+    position: absolute;
+    left: 10px;
+    bottom: 110px;
+    float: left;
+    display: inline-block;
+    background: url("../img/number.svg") 0 -20px no-repeat;
+}
+
+.wrapper .wrapper-left .wrapper-bottom {
+    padding: 0;
+    height: 110px;
+}
+
+.round {
+    float: left;
+    width: 100%;
+    height: 220px;
+    margin-top: 15px;
+}
+
+.round .inner {
+    margin: 0 auto;
+
+    width: 1240px;
+    height: 220px;
+}
+
+.round .inner .title {
+    width: 955px;
+    height: 39px;
+}
+
+.round .inner .title .today {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    float: left;
+    padding-bottom: 3px;
+}
+
+.round .inner .title > a {
+    text-decoration: none;
+}
+
+.round .inner .title .tui {
+    width: 750px;
+    height: 16px;
+    float: left;
+    padding: 0 5px;
+    margin-left: 6px;
+    margin-top: 15px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFFFEE;
+}
+
+.round .inner .title .tui > a {
+    float: left;
+    margin-left: 2px;
+    font-size: 14px;
+    color: #424242;
+}
+
+.round .inner .title .tui > a {
+    text-decoration: none;
+}
+
+.round .inner .title .tui > a:hover {
+    color: orange;
+}
+
+.round .inner .title .tui > span {
+    display: block;
+    margin-top: 2px;
+    float: left;
+    opacity: .5;
+    padding: 0 5px;
+    color: #424242;
+}
+
+.round .inner .content {
+    float: left;
+    width: 1240px;
+    height: 178px;
+}
+
+.round .inner .content .content-left {
+    width: 400px;
+    height: 160px;
+    background: #f0f0f0;
+    float: left;
+}
+
+.round .inner .content .content-left .imgBox {
+    cursor: pointer;
+    width: 220px;
+    height: 160px;
+    background: green;
+    float: left;
+    position: relative;
+}
+
+.round .inner .content .content-left .imgBox .free {
+    background: url("../img/sprite_mark.png") -60px -120px no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 55px;
+}
+
+.round .inner .content .content-left .imgBox .mask {
+    width: 220px;
+    height: 20px;
+    float: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    background: #000000;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.round .inner .content .content-left .imgBox > p {
+    z-index: 10;
+    display: block;
+    float: left;
+    width: 205px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    font: 12px/1.5 hiragino sans gb, microsoft yahei, simsun;
+    color: #FFFFEE;
+}
+
+.round .inner .content .content-left .imgBox .broad {
+    display: inline-block;
+    float: left;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 2px 0 3px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #FF8406;
+}
+
+.round .inner .content .content-left > a {
+    height: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    display: block;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #2a2a2a;
+    outline: 0 none;
+    font-size: 14px;
+}
+
+.round .inner .content .content-left > a:hover {
+    color: orange;
+}
+
+.round .inner .content .content-left .paragraph {
+    display: inline-block;
+    float: left;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    width: 150px;
+    height: 82px;
+    line-height: 20px;
+    padding: 0 15px;
+    white-space: normal;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.round .inner .content .list {
+    margin-top: -5px;
+    width: 833px;
+    overflow: hidden;
+    float: right;
+}
+
+.round .inner .content .list ul {
+    float: right;
+    list-style: none;
+    display: block;
+    font: 12px/1.5 hiragino sans gb, microsoft yahei, simsun;
+}
+
+.round .inner .content .list ul .lists {
+    margin-left: 5px;
+    float: left;
+    width: 200px;
+    display: inline-block;
+    letter-spacing: normal;
+}
+
+.round .inner .content .list ul .lists:hover {
+    background: #f0f0f0;
+}
+
+.round .inner .content .list ul li .big-img {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: block;
+    position: relative;
+    font-weight: 500;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.round .inner .content .list ul li .big-img img {
+    width: 190px;
+    height: 110px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.round .inner .content .list ul .lists .title {
+    width: 190px;
+    height: 18px;
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-weight: normal;
+    color: #424242;
+}
+
+.round .inner .content .list ul .lists .title:hover {
+    color: orange;
+}
+
+.round .inner .content .list ul .lists > p {
+    color: #999999;
+    display: inline-block;
+    bottom: 10px;
+    font-size: 12px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.round .inner .content .list ul .lists {
+    position: relative;
+}
+
+.round .inner .content .list ul .lists .free {
+    background: url("../img/sprite_mark.png") -200px -60px no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+}
+
+.round .inner .content .list ul .lists .broad {
+    display: inline-block;
+    float: left;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 0 2px 0 3px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #FF8406;
+    z-index: 10;
+}
+
+/*推拉门start*/
+.wrapper2 {
+    width: 100%;
+    height: 105px;
+    float: left;
+    margin-top: 15px;
+}
+
+.wrapper2 .wrapper {
+    margin: 0 auto;
+    width: 1240px;
+    height: 105px;
+    overflow: hidden;
+}
+
+.wrapper2 .wrapper ul {
+    width: 9999px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper2 .wrapper ul li {
+    float: left;
+    width: 248px;
+    height: 105px;
+    overflow: hidden;
+    vertical-align: top;
+
+}
+.wrapper2 .wrapper ul li{
+    transition: width linear 0.3s;
+}
+.wrapper2 .wrapper ul li.big {
+    width: 992px;
+}
+
+/*transition: width linear 0.3s;
+-webkit-transition: width linear 0.3s;
+}
+.wrapper2 .wrapper ul li:hover{
+width: 992px;
+}*/
+
+.wrapper2 .wrapper ul li .link-pic {
+    display: block;
+    width: 992px;
+    height: 100%;
+    cursor: pointer;
+    font-size: 0;
+}
+
+.wrapper2 .wrapper ul li .link-pic .link-pic-main1 {
+    display: block;
+    float: left;
+    width: 248px;
+    height: 105px;
+    overflow: hidden;
+    position: relative;
+    zoom: 1;
+}
+
+.wrapper2 .wrapper ul li .link-pic .link-pic-main1 > img {
+    width: 250px;
+    height: 105px;
+    display: inline-block;
+    vertical-align: bottom;
+
+}
+
+.wrapper2 .wrapper ul li .link-pic .link-pic-main2 {
+    display: block;
+    float: left;
+    width: 744px;
+    margin-top: 10px;
+    background: #efefef;
+}
+
+.wrapper2 .wrapper ul li .link-pic .link-pic-main2 > img {
+    width: 744px;
+    height: 95px;
+    display: inline-block;
+    vertical-align: bottom;
+
+}
+
+/*推拉门end*/
+
+.like-hot .like-left .like-middle {
+    height: 320px;
+}
+
+.run .run-inner .run-title .tui {
+    width: 786px;
+    /*float: right;*/
+}
+
+.run .run-inner {
+    margin-top: 20px;
+}
+
+.run .run-inner .run-content .run-list .run-lists .big {
+    position: relative;
+}
+
+.run .run-inner .run-content .run-list .run-lists .big .mask {
+    width: 190px;
+    height: 20px;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    background: #000;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.run .run-inner .run-content .run-list .run-lists .big p {
+    z-index: 10;
+    display: block;
+    float: left;
+    width: 175px;
+    height: 20px;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    font: 12px/1.5 hiragino sans gb, microsoft yahei, simsun;
+    color: #FFFFEE;
+}
+
+.run .run-inner .run-content .run-list .run-lists .title {
+    margin-left: 0;
+}
+
+.lol {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+}
+
+.lol .lol-inner {
+    margin: 0 auto;
+    width: 1240px;
+    overflow: hidden;
+}
+
+.lol .lol-inner .lol-left {
+    float: left;
+    cursor: pointer;
+}
+
+.lol .lol-inner .lol-right {
+    float: right;
+    cursor: pointer;
+}
+
+.movie-outer {
+    margin-top: 40px;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+
+}
+
+.movie-outer .movie {
+    margin: 0 auto;
+    width: 1240px;
+    /*height: 654px;*/
+}
+
+.movie-outer .movie .mod-left {
+    width: 955px;
+    float: left;
+}
+
+.movie-outer .movie .mod-left .mod-hd {
+    height: 32px;
+    width: 955px;
+    overflow: hidden;
+}
+
+.movie-outer .movie .mod-left .mod-hd > a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    float: left;
+    padding-bottom: 3px;
+
+}
+
+.movie-outer .movie .mod-left .mod-hd .tui {
+    width: 770px;
+    height: 16px;
+    float: left;
+    padding: 0 5px;
+    margin-left: 6px;
+    margin-top: 15px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFFFEE;
+}
+
+.movie-outer .movie .mod-left .mod-hd .tui > a {
+    text-decoration: none;
+}
+
+.movie-outer .movie .mod-left .mod-hd .tui > a:hover {
+    color: orange;
+}
+
+.movie-outer .movie .mod-left .mod-hd .tui > a {
+    float: left;
+    margin-left: 2px;
+    font-size: 14px;
+    color: #424242;
+}
+
+.movie-outer .movie .mod-left .mod-hd .tui > span {
+    display: block;
+    margin-top: 2px;
+    float: left;
+    opacity: .5;
+    padding: 0 5px;
+    color: #424242;
+}
+
+.movie-outer .movie .mod-left .list {
+    width: 965px;
+    /*height: 574px;*/
+    float: left;
+    margin-top: 10px;
+    margin-left: -5px;
+    overflow: hidden;
+}
+
+.movie-outer .movie .mod-left .list > ul {
+    width: 100%;
+    height: 282px;
+    overflow: hidden;
+}
+
+.movie-outer .movie .mod-left .list .lists {
+    display: inline-block;
+    width: 185px;
+    height: 282px;
+}
+
+.movie-outer .movie .mod-left .list .lists:hover {
+    background: #f0f0f0;
+}
+
+.movie-outer .movie .mod-left .list .lists .box .imgBox {
+    width: 175px;
+    height: 240px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: url("../img/movie.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.movie-outer .movie .mod-left .list .lists .box {
+    width: 175px;
+    height: 245px;
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.movie-outer .movie .mod-left .list .lists .box .content {
+    position: absolute;
+    left: 15px;
+    bottom: 25px;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 2px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 10;
+}
+
+.movie-outer .movie .mod-left .list .lists .box .mask {
+    width: 175px;
+    height: 50px;
+    float: left;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    background: #000;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.movie-outer .movie .mod-left .list .lists .box > i {
+    background: url("../img/sprite_common.png") -150px 0 no-repeat;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    bottom: 13px;
+    z-index: 10;
+}
+
+.movie-outer .movie .mod-left .list .lists .box .hot {
+    display: inline-block;
+    position: absolute;
+    left: -25px;
+    bottom: 12px;
+    width: 160px;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    color: #FFFFEE;
+    z-index: 10;
+}
+
+.movie-outer .movie .mod-left .list .lists .box .score span:nth-child(1) {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: right;
+    color: #ff7800;
+    font-family: STSong, Aparajita;
+    white-space: nowrap;
+    font-style: normal;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    z-index: 10;
+}
+
+.movie-outer .movie .mod-left .list .lists .box .score span:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+    color: #ff7800;
+    font-family: STSong, Aparajita;
+    white-space: nowrap;
+    font-style: normal;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.movie-outer .movie .mod-left .list .lists > p {
+    width: 175px;
+    height: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+
+    float: left;
+}
+
+.movie-outer .movie .mod-left .list .lists > p:hover {
+    color: orange;
+}
+
+.movie-outer .movie .mod-right {
+    width: 265px;
+    height: 634px;
+    float: right;
+}
+
+.movie-outer .movie .mod-right .mod-rightHd {
+    width: 265px;
+    height: 47px;
+    overflow: hidden;
+}
+
+.movie-outer .movie .mod-right .mod-rightHd > p {
+    display: inline-block;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    width: 75px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 14px;
+}
+
+.movie-outer .movie .mod-right .mod-rightHd > i {
+    background: url("../img/sprite_common.png") 0 -140px no-repeat;
+    width: 26px;
+    height: 7px;
+    display: inline-block;
+    float: left;
+    margin-left: 6px;
+    margin-top: 30px;
+}
+
+.movie-outer .movie .mod-right .mod-bd {
+    height: 269px;
+    width: 265px;
+    background: #f0f0f0;
+}
+
+.movie-outer .movie .mod-right .mod-bd .img {
+    width: 265px;
+    height: 130px;
+    float: left;
+    position: relative;
+    display: block;
+
+}
+
+.movie-outer .movie .mod-right .mod-bd .img > p {
+    position: absolute;
+    left: 50px;
+    bottom: 7px;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 2px;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 14px;
+    z-index: 10;
+}
+
+.movie-outer .movie .mod-right .mod-bd .img .mask {
+    width: 225px;
+    height: 36px;
+    float: left;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    background: #000;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.movie-outer .movie .mod-right .mod-bd ol {
+    float: left;
+    width: 50%;
+    padding: 12px 0 0;
+    zoom: 1;
+    list-style: none;
+    display: block;
+    font: 12px/1.5 hiragino sans gb, microsoft yahei, simsun;
+}
+
+.movie-outer .movie .mod-right .mod-bd ol li {
+    float: none;
+    width: 100%;
+    position: relative;
+    margin-top: -10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: top;
+    padding: 6px;
+}
+
+.movie-outer .movie .mod-right .mod-bd ol li span {
+    display: block;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.movie-outer .movie .mod-right .mod-bd ol li .long {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    zoom: 1;
+    width: 100px;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.movie-outer .movie .mod-right .mod-bd ol li .long:hover {
+    color: orange;
+}
+
+.movie-outer .movie .mod-right .mod-fd {
+    width: 265px;
+    height: 323px;
+    background: #f0f0f0;
+    overflow: hidden;
+}
+
+.movie-outer .movie .mod-right .mod-fd > h4 {
+    display: inline-block;
+    width: 70px;
+    height: 18px;
+    padding-right: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    background: #f0f0f0;
+    margin-left: 15px;
+    float: left;
+}
+
+.movie-outer .movie .mod-right .mod-fd .line {
+    display: inline-block;
+    width: 166px;
+    height: 1px;
+    background: #CCCCCC;
+    float: left;
+    margin-top: 8px;
+}
+
+.movie-outer .movie .mod-right .mod-fd .list ul {
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+.movie-outer .movie .mod-right .mod-fd .list ul li {
+    position: relative;
+    height: 45px;
+    padding: 10px;
+}
+
+.movie-outer .movie .mod-right .mod-fd .list ul li > div:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 85px;
+    height: 50px;
+    background: url("../img/yuegao.jpg") no-repeat;
+    background-size: cover; /*覆盖*/
+}
+
+.movie-outer .movie .mod-right .mod-fd .list ul li > div:nth-child(1) {
+
+}
+
+.movie-outer .movie .mod-right .mod-fd .list ul li > div:last-child {
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 60px;
+    _background: lightblue;
+    margin-left: 76px;
+
+}
+
+.movie-outer .movie .mod-right .mod-fd .list ul li > div:last-child h2 {
+    line-height: 20px;
+    font-size: 14px;
+    /*标题省略号*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.movie-outer .movie .mod-right .mod-fd .list ul li > div:last-child p {
+    font-size: 12px;
+    color: #999;
+    margin-top: 6px;
+}
+
+.movie-outer .movie .mod-right .mod-fd .more {
+    width: 235px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #e2e2e2;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.movie-outer .movie .mod-right .mod-fd .more:hover {
+    background: #CCCCCC;
+}
+
+.vip {
+    height: 324px;
+}
+
+.vip .vip-inner .vip-left .vip-hd .tui {
+    width: 400px;
+}
+
+.vip .vip-inner .vip-left .vip-hd .open {
+    margin-right: 10px;
+    display: block;
+    float: right;
+    position: relative;
+}
+
+.vip .vip-inner .vip-left .vip-hd .open > span {
+    height: 14px;
+    line-height: 14px;
+    display: inline-block;
+    font-size: 14px;
+    color: #2a2a2a;
+    margin-top: 18px;
+    margin-right: -13px;
+    position: absolute;
+    left: -138px;
+    top: 0;
+}
+
+.vip .vip-inner .vip-left .vip-left .vip-list {
+    height: 277px;
+}
+
+.vip .vip-inner .vip-left .vip-hd .open i:first-child {
+    display: inline-block;
+    zoom: 1;
+    width: 16px;
+    height: 16px;
+    font-size: 0;
+    overflow: hidden;
+    background: url(../img/sprite_vip.png) 0 0 no-repeat;
+    position: absolute;
+    right: 140px;
+    top: 16px;
+}
+
+.vip .vip-inner .vip-left .vip-hd .open i:last-child {
+    display: inline-block;
+    zoom: 1;
+    width: 9px;
+    height: 11px;
+    background: url(../img/sprite_common.png?v=0417) -20px -150px no-repeat;
+    vertical-align: middle;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+
+.vip .vip-inner .vip-left .vip-list .lists .box .mask {
+    height: 55px;
+    position: absolute;
+    left: 5px;
+    bottom: -5px;
+}
+
+.vip .vip-inner .vip-left .vip-list .lists > p {
+    margin-top: 10px;
+}
+
+.vip .vip-inner .vip-right .vip-hd .img > img {
+    width: 100%;
+    height: 100%;
+}
+
+.usa .usa-title .today > span {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: top;
+    padding: 0 6px;
+}
+
+.usa .usa-left .usa-top > i {
+    margin-left: -5px;
+}
+
+.foot {
+    width: 100%;
+    height: 396px;
+    background: #f0f0f0;
+    margin-top: 80px;
+    float: left;
+}
+
+.foot .foot-hd {
+    margin: 25px auto 0;
+    background: #FFFFEE;
+    width: 1240px;
+    height: 109px;
+    overflow: hidden;
+}
+
+.foot .foot-hd .foot-left {
+    float: left;
+    width: 320px;
+    height: 74px;
+    margin-top: 17px;
+    margin-left: 43px;
+    position: relative;
+}
+
+.foot .foot-hd .foot-left .hot {
+    float: left;
+    margin-left: 0;
+    margin-top: 0;
+    height: 21px;
+    display: block;
+    color: #979797;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.foot .foot-hd .foot-left .list {
+    width: 320px;
+    float: left;
+    overflow: hidden;
+}
+
+.foot .foot-hd .foot-left .list li {
+    display: inline-block;
+    padding: 4px 3px;
+}
+
+.foot .foot-hd .foot-left .list li a {
+    font: 12px/1.5 hiragino sans gb, microsoft yahei, simsun;
+    color: #999;
+}
+
+.foot .foot-hd .foot-left .list li a:hover {
+    color: #ff7800;
+}
+
+.foot .foot-hd .foot-left .line {
+    position: absolute;
+    right: -25px;
+    top: -3px;
+    width: 1px;
+    height: 73px;
+    background: #CCCCCC;
+    float: left;
+}
+
+.foot .foot-hd .foot-middle1 {
+    padding: 0 18px;
+    width: 170px;
+}
+
+.foot .foot-hd .foot-middle1 .list {
+    width: 160px;
+}
+
+.foot .foot-hd .foot-middle1 .middle1-line {
+    position: absolute;
+    left: 210px;
+    top: -3px;
+}
+
+.foot .foot-hd .foot-middle2 {
+    padding: 0 18px;
+    width: 230px;
+}
+
+.foot .foot-hd .foot-middle2 .list {
+    width: 230px;
+}
+
+.foot .foot-hd .foot-right {
+    padding: 0 0 0 68px;
+    width: 170px;
+}
+
+.foot .foot-hd .foot-right .list {
+    width: 160px;
+}
+
+.foot .foot-hd .foot-middle2 .middle2-line {
+    position: absolute;
+    left: 326px;
+    top: -3px;
+}
+
+.foot .foot-bd {
+    margin: 0 auto;
+    background: #f7f7f7;
+    width: 1240px;
+    height: 132px;
+    overflow: hidden;
+    font: 12px/1.5 hiragino sans gb,microsoft yahei,simsun;
+}
+.foot .foot-bd .foot-left .hot{
+    display: block;
+    float: left;
+    width: 56px;
+
+}
+.foot .foot-bd .foot-left .list{
+    width: 1080px;
+    /*float: left;*/
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: -26px;
+}
+.foot .foot-bd .foot-left .list li{
+    padding: 5px 5px;
+    float: left;
+}
+.foot .foot-bd .foot-left .list span{
+    opacity: .4;
+    display: block;
+    float: left;
+    margin-top: 4px;
+}
+
+.foot .foot-bt{
+    line-height: 30px;
+    padding: 15px 0;
+    text-align: center;
+    color: #838383;
+    width: 1240px;
+    height: 90px;
+
+    margin: 0 auto;
+}
+.foot .foot-bt .about{
+    margin: 0 auto;
+    height: 30px;
+    text-align: center;
+    font: 12px/1.5 hiragino sans gb,microsoft yahei,simsun;
+}
+.foot .foot-bt .about a{
+    color: #838383;
+
+}
+.foot .foot-bt .about a:hover{
+    color: orange;
+}
+.foot .foot-bt .about p{
+    display: inline-block;
+}
+.foot .foot-bt .about a{
+    display: inline-block;
+}
+
+/*回到顶部start*/
+.link {
+    display: none;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #999;
+    line-height: 50px;
+    text-align: center;
+    background: #CCCCCC;
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    opacity: .5;
+    font-weight: bold;
+    z-index: 99;
+}
+
+.link:hover {
+    opacity: .7;
+}
+
+#top {
+    position: relative;
+}
+
+#top .link:hover #return {
+    display: block;
+}
+
+#top #return {
+    display: none;
+    float: left;
+    position: fixed;
+    right: 0;
+    bottom: 4px;
+    font-size: 12px;
+    border: 1px solid #333333;
+    z-index: 100;
+    padding: 2px 5px;
+    background: #FFF;
+    box-shadow: 3px 3px 3px 1px #999;
+    opacity: 0;
+    animation: arrowFlash 2s linear 0s both; /*名字 、花费时间、动画类型、延时时间、流动结果*/
+    -webkit-animation: arrowFlash 2s linear 0s both;
+}
+
+@keyframes arrowFlash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#top i {
+    position: fixed;
+    right: 9px;
+    bottom: 38px;
+    display: inline-block;
+    zoom: 1;
+    width: 34px;
+    height: 34px;
+    margin: -17px 0 0 -17px;
+    overflow: hidden;
+    background: url("../img/sprite_backtop.png") 0 -34px no-repeat;
+}
+
+/*回到顶部end*/
+
+
+
+
+
+
+
+
+
+
+
